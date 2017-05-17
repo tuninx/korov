@@ -188,7 +188,7 @@ def queue_worker():
                 if arena_delay and arena_delay_day != datetime.now(tz).day:
                     arena_delay = False
                 lt_info = time()
-                get_info_diff = random.randint(900, 1200)
+                get_info_diff = random.randint(2400, 3000)
                 if bot_enabled:
                     send_msg('@', bot_username, orders['hero'])
                 continue
