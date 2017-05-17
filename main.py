@@ -92,6 +92,7 @@ orders = {
     'hero': '🏅Герой',
     'corovan': '/go',
     'peshera': '🕸Пещера',
+    'korovi': '🐫ГРАБИТЬ КОРОВАНЫ',
     'quests': '🗺 Квесты',
     'castle_menu': '🏰Замок',
     'lavka': '🏚Лавка',
@@ -299,7 +300,7 @@ def parse_text(text, username, message_id):
                     action_list.append(random.choice([orders['peshera'], orders['les']]))
                 else:
                     action_list.append(orders['quests'])
-                    action_list.append(orders['peshera'])
+                    action_list.append(orders['korovi'])
 
             elif les_enabled and not peshera_enabled and endurance >= 1 and orders['les'] not in action_list and text.find('🛌Отдых') != -1:
                 action_list.append(orders['quests'])
